@@ -8,6 +8,18 @@ Explanation:
 Each linked list stores digits in reverse order. Add them digit by digit while
 maintaining the carry. Return the resulting linked list.
 
+Algorithm:
+1. Create a dummy node to store the result linked list.
+2. Initialize a pointer (tail) to the dummy node and set carry = 0.
+3. Traverse both linked lists simultaneously until both lists are exhausted and there is no carry left.
+4. Read the current digit from each linked list. If a list has ended, consider its digit as 0.
+5. Calculate the sum = digit1 + digit2 + carry.
+6. Store the last digit of the sum (sum % 10) in a new node and attach it to the result linked list.
+7. Update the carry = sum // 10.
+8. Move to the next node in both linked lists (if available).
+9. Repeat the process until all digits and the final carry are processed.
+10. Return the linked list starting from the node next to the dummy node.
+
 Sample Input:
 First list: 2 4 3
 Second list: 5 6 4
