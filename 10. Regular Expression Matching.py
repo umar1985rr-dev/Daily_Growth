@@ -1,6 +1,4 @@
 """
-LeetCode 10: Regular Expression Matching
-
 Aim:
 Determine whether the entire input string matches the given pattern using '.' and '*'.
 
