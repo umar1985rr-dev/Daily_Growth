@@ -1,6 +1,4 @@
 """
-LeetCode 11: Container With Most Water
-
 Aim:
 Find two vertical lines that form a container capable of storing the maximum amount of water.
 
